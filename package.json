@@ -9,6 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "author": "Rifqi Abrory",
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.7",
@@ -16,10 +17,15 @@
     "@angular/compiler": "~9.0.7",
     "@angular/core": "~9.0.7",
     "@angular/forms": "~9.0.7",
+    "@angular/http": "^7.2.16",
+    "@angular/localize": "^9.1.9",
     "@angular/platform-browser": "~9.0.7",
     "@angular/platform-browser-dynamic": "~9.0.7",
     "@angular/router": "~9.0.7",
-    "rxjs": "~6.5.4",
+    "@ng-bootstrap/ng-bootstrap": "^6.1.0",
+    "bootstrap": "^4.5.0",
+    "moment": "^2.26.0",
+    "rxjs": "^6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
