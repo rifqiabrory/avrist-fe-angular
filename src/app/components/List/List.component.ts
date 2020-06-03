@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from "@angular/core";
 import { UserProvider } from "src/providers/user/user";
 import { Router } from "@angular/router";
 import { ModalConfirmService } from "../modal-confirm/modal-confirm.service";
+import { PreviewService } from "../preview/preview.service";
 
 @Component({
   selector: "app-List",
@@ -16,6 +17,7 @@ export class ListComponent implements OnInit {
   constructor(
     private _userService: UserProvider,
     private _router: Router,
+    private _preview: PreviewService,
     private _confirmService: ModalConfirmService
   ) {
     this.init();
@@ -36,6 +38,12 @@ export class ListComponent implements OnInit {
 
   onEdit(val) {
     this._router.navigate(["/edit"], { queryParams: { id: val.user_id } });
+  }
+
+  onPreview(image) {
+    this._preview.preview("Preview An Image", image).then((value) => {
+      console.log(value);
+    });
   }
 
   onRemove(val) {

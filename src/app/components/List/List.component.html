@@ -37,8 +37,8 @@
           <td>{{ item.gender === "M" ? "Male" : "Female" }}</td>
           <td>{{ item.date_of_birth | date: "dd-MMM-yyyy" }}</td>
           <td>
-            <img class="img-thumbnail" style="height: 60px;width: 80px;" src="data:image/png;base64,{{item.user_image}}"
-              alt="User Image">
+            <img (click)="onPreview(item.user_image)" class="img-thumbnail" style="height: 60px;width: 80px;"
+              src="data:image/png;base64,{{item.user_image}}" alt="User Image">
           </td>
           <td>{{ item.status }}</td>
           <td>{{ item.created_by }}</td>

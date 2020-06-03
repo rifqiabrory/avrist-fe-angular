@@ -1,0 +1,13 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{ title }}</h4>
+</div>
+<div class="modal-body">
+  <div class="img-container">
+    <img class="img-thumbnail" style="height: 350px;width: 100%;" src="data:image/png;base64,{{image}}"
+      alt="User Image">
+    <button type="button" class="btn btn-outline-success btn-light" (click)="onDownload(image)">Download</button>
+  </div>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-light" (click)="onClose()">{{ btnCloseText }}</button>
+</div>

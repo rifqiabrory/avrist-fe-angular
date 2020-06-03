@@ -1,0 +1,16 @@
+.img-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+
+  button {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+  }
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
